@@ -282,3 +282,33 @@ nav a:hover {
 .disabled{
     pointer-events: none;
 }
+.feedback{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.feed{
+    margin-top: 5.5rem;
+    font-weight: 900;
+}
+.contain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: 80%;
+    align-items: center;
+    margin: .5%;
+}
+.feedback .row{
+    flex-basis: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feedback form{
+    width: 80%;
+}

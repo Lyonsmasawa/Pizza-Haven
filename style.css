@@ -332,7 +332,7 @@ footer a{
     align-items: center;
     justify-content: center;
     width: 100%;
-    /* background: linear-gradient(135deg, rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.568)), url("img/toppins.jpg"); */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.911), rgba(255, 255, 255, 0.705)), url("img/toppins.jpg");
     /* background: url("img/toppins.jpg"); */
     background-size: cover;
 }
@@ -351,11 +351,21 @@ footer a{
     width: 96%;
 }
 .card-title{
-    font-weight: 600;
+    font-weight: 900;
+    color: red;
 }
 .card-text{
     color: white;
     background-color: black;
     padding: 1% 4%;
     font-size: .8rem;
+}
+.btn-cust{
+     background-color: red;
+     padding: 0% 4%;
+     color: white; 
+}
+.group-em{
+    display: flex;
+    justify-content: space-between;
 }

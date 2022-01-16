@@ -9,6 +9,18 @@
     transition: all .3s linear;
 }
 
+.blink_me {
+    font-size: 1rem;
+    color: red;
+    animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0.3;
+    }
+}
+
 html {
     overflow-x: hidden;
     font-size: 100%;
@@ -76,13 +88,16 @@ nav a {
     flex-direction: column;
     align-items: center;
 }
-.intro h5{
+
+.intro h5 {
     font-style: italic;
     font-size: 1.4rem;
 }
-.intro h4{
+
+.intro h4 {
     font-size: 1.7rem;
 }
+
 .fa-smile-wink {
     color: red;
     font-size: 2rem;
@@ -110,10 +125,12 @@ nav a {
     padding: 0.4% 2%;
     border: transparent;
 }
-.menu a{
+
+.menu a {
     color: white;
 }
-.menu a:hover{
+
+.menu a:hover {
     color: black;
     text-decoration: none;
     font-size: 1.3rem;
@@ -121,20 +138,23 @@ nav a {
     text-align: center;
 }
 
-#about-us{
+#about-us {
     display: flex;
     flex-direction: column;
     padding: 2rem;
     width: 100%;
     margin-bottom: 2%;
 }
-.y{
+
+.y {
     flex-basis: 100%;
 }
-.x{
+
+.x {
     display: flex;
     flex-direction: column;
 }
+
 .z {
     flex-basis: 100%;
     display: flex;
@@ -142,34 +162,40 @@ nav a {
     justify-content: center;
     align-items: center;
 }
-.one{
+
+.one {
     background-image: url("img/unsplash/pizza3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     flex-basis: 100%;
 }
-.two{
+
+.two {
     background-image: url("img/pic10.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     flex-basis: 100%;
 }
-#about-us p{
+
+#about-us p {
     font-size: 2rem;
     font-style: italic;
     font-weight: 200;
 }
-.brief{
+
+.brief {
     color: red;
 }
-#about-us .card{
+
+#about-us .card {
     padding: 1%;
     font-size: 1.8rem;
     flex-basis: 100%;
     align-items: center;
     justify-content: space-around;
 }
-#about-us .fas{
+
+#about-us .fas {
     color: red;
     font-size: 1.3rem;
 }
@@ -189,13 +215,15 @@ nav a {
     background-repeat: no-repeat;
     border-radius: 0%;
 }
-.newbtn{
+
+.newbtn {
     background-color: black;
-    color:white;
+    color: white;
     outline: 2px solid;
     letter-spacing: .2rem;
 }
-footer{
+
+footer {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -204,7 +232,8 @@ footer{
     justify-content: center;
     background-color: black;
 }
-.quick-links{
+
+.quick-links {
     background-color: black;
     width: 95%;
     padding: 2% 4% 0% 4%;
@@ -214,21 +243,25 @@ footer{
     font-weight: 700;
     font-size: .9rem;
 }
-.quick-links li::before{
+
+.quick-links li::before {
     content: "\00BB   ";
 }
-.quick-links .social-media li::before{
+
+.quick-links .social-media li::before {
     content: " ";
 }
-.quick-links .col-md-3{
+
+.quick-links .col-md-3 {
     text-align: left;
     flex-basis: 30%;
 }
 
-.quick-links h4{
+.quick-links h4 {
     color: red;
 }
-.copyright{
+
+.copyright {
     background-color: rgb(16, 16, 22);
     width: 100%;
     padding: .5%;
@@ -238,39 +271,47 @@ footer{
     color: rgb(156, 156, 156);
     font-weight: 200;
 }
-.copyright a{
+
+.copyright a {
     color: red;
     letter-spacing: .21rem;
     margin-left: 1%;
 }
-.copyright:hover{
+
+.copyright:hover {
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
-.fa-shopping-basket{
+
+.fa-shopping-basket {
     color: red;
     background-color: rgba(255, 255, 255, 0.87);
     padding: 10%;
     border-radius: 25px;
     font-size: 1.5rem;
 }
-.sub{
- background-color: black;
- padding: 1rem;
- display: flex;
- align-items: center;
- gap: 1%;
- justify-content: center;
+
+.sub {
+    background-color: black;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1%;
+    justify-content: center;
 }
-.sub .fas{
+
+.sub .fas {
     color: white;
     border-radius: 0%;
 }
-.sub .btn{
+
+.sub .btn {
     border-radius: 0%;
     outline: 2px solid;
 }
-nav a:hover, footer a:hover {
+
+nav a:hover,
+footer a:hover {
     color: white;
     font-size: 1.3rem;
     padding: .4rem .6rem;
@@ -278,6 +319,7 @@ nav a:hover, footer a:hover {
     box-shadow: 0px .1px 1px white;
     text-decoration: none;
 }
+
 footer a:hover {
     color: red;
     font-size: 1.1rem;
@@ -286,23 +328,28 @@ footer a:hover {
     box-shadow: 0px .1px 1px white;
     text-decoration: none;
 }
-footer a{
+
+footer a {
     color: white;
 }
-.disabled{
+
+.disabled {
     pointer-events: none;
 }
-.feedback{ 
+
+.feedback {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.feed{
+
+.feed {
     margin-top: 5.5rem;
     font-weight: 900;
 }
-.contain{
+
+.contain {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -311,7 +358,8 @@ footer a{
     align-items: center;
     margin: .5%;
 }
-.feedback .row{
+
+.feedback .row {
     flex-basis: 100%;
     width: 100%;
     display: flex;
@@ -319,13 +367,15 @@ footer a{
     justify-content: center;
 }
 
-.feedback form{
+.feedback form {
     width: 80%;
 }
-.feedback nav{
+
+.feedback nav {
     background-color: black;
 }
-.menu-body{
+
+.menu-body {
     margin-top: 6rem;
     display: flex;
     flex-direction: column;
@@ -336,36 +386,41 @@ footer a{
     /* background: url("img/toppins.jpg"); */
     background-size: cover;
 }
-.menu-body .card{
+
+.menu-body .card {
     display: flex;
     text-align: left;
     align-items: center;
     justify-content: center;
-    margin: 1rem;  
-    box-shadow: 0px 0px 15px black; 
+    margin: 1rem;
+    box-shadow: 0px 0px 15px black;
     border-radius: 4px;
     padding: .1%;
 }
-.card-body{
+
+.card-body {
     padding: 0%;
     width: 96%;
 }
-.card-title{
+
+.card-title {
     font-weight: 900;
     color: red;
 }
-.card-text{
+
+.card-text {
     color: white;
     background-color: black;
     padding: 1% 4%;
     font-size: .8rem;
 }
 
-.group-em{
+.group-em {
     display: flex;
     justify-content: space-between;
 }
-.choices{
+
+.choices {
     font-size: .8rem;
     margin-top: 2%;
     width: 90%;
@@ -374,26 +429,30 @@ footer a{
     justify-content: center;
     padding: 1%;
 }
-.choices label{
+
+.choices label {
     font-weight: 700;
     padding: 0%;
     margin: 0%;
 }
-.btn-cust2{
+
+.btn-cust2 {
     background-color: black;
     padding: 1% 4%;
     border-radius: 2px;
-    color: white; 
+    color: white;
     font-weight: 900;
     font-size: .8rem;
 }
-.form-x{
+
+.form-x {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.toppings{
+
+.toppings {
     font-size: .8rem;
     display: flex;
     flex-direction: column;
@@ -401,11 +460,13 @@ footer a{
     width: 100%;
     justify-content: space-around;
 }
-.toppings .title{
+
+.toppings .title {
     margin-top: 2%;
     font-weight: 700;
 }
-.card .btn-cust{
+
+.card .btn-cust {
     font-size: .8rem;
     font-weight: 700;
 }

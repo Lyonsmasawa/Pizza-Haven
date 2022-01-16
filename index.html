@@ -26,26 +26,13 @@
 </head>
 
 <body class="container-fluid">
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="#home"><img class="lg" src="img/other/logo.png" alt="" style="width: 50%;"></a>
-            </div>
-            <ul class="navcontent">
-                <li><i class="fas fa-home"></i><a href="#home"> Home</a></li>
-                <li><i class="fas fa-bars"></i><a href="/menu.html"> Menu</a></li>
-                <li><i class="fas fa-phone"></i><a href="#contacts"> Contacts</a></li>
-                <li><i class="fas fa-user"></i><a class="disabled" role="button" aria-disabled="true" href="/login.html"> Login</a></li>
-                <li><a href="/cart.html"><i class="fas fa-shopping-basket"></i></a></li>
-            </ul>
-        </nav>
-    </header>
+    <script id="replace_with_navbar" src="nav.js"></script>
     <section id="home">
         <div class="intro">
             <p><img src="img/other/icon.png" alt=""></p>
             <h4>we both know why you are here <span><i class="fas fa-smile-wink"></i></span></h4>
             <h5>and we won't <kbd><span class="dare text-danger ">dare</span></kbd> dissapoint</h5>
-            <button class="menu">MENU</button>
+            <button class="menu"><a href="menu.html"> MENU</a></button>
         </div>
     </section>
 
@@ -86,67 +73,26 @@
             </div>
         </div>
     </section>
-
-    <footer id="contacts">
-        <div class="newsletter card">
-            <h5>Subscribe to get our offers:</h5>
-            <form action="">
-                <div class="sub row">
-                    <div class="name-group input-group col">
-                        <button class="btn"><span class="fas fa-user"></span></button>
-                        <input type="text" placeholder="name" class="form-control" name="NUM" id="cnum" required>
-                    </div>
-                    <div class="name-group input-group col">
-                        <button class="btn"><span class="fas fa-envelope"></span></button>
-                        <input type="text" placeholder="enter your mail here..." class="form-control" name="NUM"
-                            id="cnum" required>
-                    </div>
-                    <div class="coll">
-                        <input type="submit" class="btn newbtn form-control" value="SUBSCRIBE">
-                    </div>
+    <div class="newsletter card">
+        <h5>Subscribe to get our offers:</h5>
+        <form action="">
+            <div class="sub row">
+                <div class="name-group input-group col">
+                    <button class="btn"><span class="fas fa-user"></span></button>
+                    <input type="text" placeholder="name" class="form-control" name="NUM" id="cnum" required>
                 </div>
-            </form>
-        </div>
-        <div class="row quick-links" id="contactus">
-            <div class="col-md-3">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="/menu.html"> Menu</a></li>
-                    <li><a href="#about-us"> How it works</a></li>
-                    <li><a href="/feedback.html"> Feedback</a></li>
-                </ul>
+                <div class="name-group input-group col">
+                    <button class="btn"><span class="fas fa-envelope"></span></button>
+                    <input type="text" placeholder="enter your mail here..." class="form-control" name="NUM" id="cnum"
+                        required>
+                </div>
+                <div class="coll">
+                    <input type="submit" class="btn newbtn form-control" value="SUBSCRIBE">
+                </div>
             </div>
-            <div class="col-md-3">
-                <h4>Information Links</h4>
-                <ul>
-                    <li>About us</li>
-                    <li>Privacy</li>
-                    <li>Terms & Conditions</li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h4>Social Media Tags</h4>
-                <ul class="social-media">
-                    <li><img src="img/other/whatsapp.png" alt="" style="width: 17%;">+25470897380</li>
-                    <li><img src="img/other/fb.png" alt="" style="width: 17%;">PizzaHaven</li>
-                    <li><img src="img/other/ig.png" alt="" style="width: 17%;">PizzaHaven</li>
-                    <li><img src="img/other/twitter.png" alt="" style="width: 17%;">@pizzahaven</li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h4>Contact Information</h4>
-                <ul class="social-media">
-                    <li><i class="fas fa-map-marker-alt"> </i> Ongata Rongai</li>
-                    <br>
-                    <li><i class="fas fa-envelope"> </i> pizzahaven@gmail.com</li>
-                    <br>
-                    <li><i class="fas fa-mobile"> </i> +2540708957380</li>
-                </ul>
-            </div>
-        </div>
-        <p class="copyright">© 2022 PizzaHaven Kenya. All rights reserved. Powered by <a
-                href="https://lyonsmasawa.github.io/Portfolio/" target="_blank">LyonsX</a></p>
-    </footer>
+        </form>
+    </div>
+        <script id="replace_with_footer" src="footer.js"></script>
 </body>
 
 </html>

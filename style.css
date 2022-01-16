@@ -372,12 +372,22 @@ footer a{
 .choices{
     font-size: .82rem;
     margin-top: 1%;
+    width: 100%;
     padding: 1%;
     display: flex;
     justify-content: space-around;
 }
-.btn-cust{
-    background-color: red;
-    padding: 0% 4%;
+
+.btn-cust2{
+    background-color: black;
+    padding: 1% 4%;
+    border-radius: 2px;
     color: white; 
+    font-weight: 900;
+    font-size: .8rem;
+}
+.form-x{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

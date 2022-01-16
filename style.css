@@ -92,6 +92,11 @@ nav a {
 
 #home {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 61vh;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.863), rgba(255, 255, 255, 0.938)), url("img/unsplash/bg1.jpg");
     background-size: contain;
 }
@@ -105,17 +110,18 @@ nav a {
     margin-top: 1.5rem;
     padding: 0.4% 2%;
     border: transparent;
-    animation: mymove 10s;
 }
 
 .newsletter {
-    padding: 1rem;
+    padding: 1.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
+    width: 100%;
+    align-self: baseline;
+    justify-self: baseline;
     background: red;
-    flex-basis: 100%;
     background-size: cover;
     background-blend-mode: overlay;
     background-repeat: no-repeat;
@@ -124,4 +130,43 @@ nav a {
     background-color: black;
     color:white;
     letter-spacing: .2rem;
+}
+#about-us{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 100%;
+    height: 70vh;
+}
+.x{
+    display: flex;
+    flex-direction: column;
+}
+.one{
+    background-image: url("img/unsplash/pizza3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-basis: 100%;
+}
+.two{
+    background-image: url("img/pic10.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-basis: 100%;
+}
+#about-us p{
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 200;
+}
+.brief{
+    color: red;
+}
+#about-us .card{
+    padding: 1%;
+    font-size: 1.8rem;
+}
+#about-us .fas{
+    color: red;
+    font-size: 1.3rem;
 }

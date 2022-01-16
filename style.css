@@ -90,8 +90,10 @@ nav a {
     border-radius: 6px;
 }
 
-#hom {
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.089), rgba(0, 110, 255, 0.5)), url("img/BBQchcicken.jpg");
+#home {
+    width: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.863), rgba(255, 255, 255, 0.938)), url("img/unsplash/bg1.jpg");
+    background-size: contain;
 }
 
 .menu {
@@ -111,6 +113,15 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, rgba(4, 184, 255, 0.719), rgba(245, 4, 4, 0.534)), url("img/unsplash/bg1.jpg");
+    color: white;
+    background: red;
     flex-basis: 100%;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+}
+.newbtn{
+    background-color: black;
+    color:white;
+    letter-spacing: .2rem;
 }

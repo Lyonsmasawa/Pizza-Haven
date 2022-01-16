@@ -16,3 +16,54 @@ html {
     font-size: 100%;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-fluid {
+    padding: 0%;
+    width: 100%;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .1% 0.2%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.3);
+}
+.logo {
+    flex-basis: 25%;
+    padding-left: 2%;
+    display: flex;
+}
+.navcontent {
+    flex-basis: 100%;
+    display: flex;
+    align-self: flex-end;
+    list-style: none;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+nav li {
+    padding: 0 4%;
+    font-weight: 700;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    border-radius: 2px;
+}

@@ -41,6 +41,7 @@ nav {
     z-index: 1000;
     box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.3);
 }
+
 .logo {
     flex-basis: 25%;
     padding-left: 2%;
@@ -56,16 +57,19 @@ nav {
     justify-content: space-around;
     align-items: center;
 }
+
 nav li {
     padding: 0 4%;
     font-weight: 700;
 }
+
 nav a {
     color: white;
     text-decoration: none;
     font-size: 24px;
     border-radius: 2px;
 }
+
 .intro {
     padding-top: 15rem;
     height: 50vh;
@@ -73,6 +77,23 @@ nav a {
     flex-direction: column;
     align-items: center;
 }
+.intro h5{
+    font-style: italic;
+    font-size: 1.4rem;
+}
+.intro h4{
+    font-size: 1.7rem;
+}
+.fa-smile-wink {
+    color: red;
+    font-size: 2rem;
+    border-radius: 6px;
+}
+
+#hom {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.089), rgba(0, 110, 255, 0.5)), url("img/BBQchcicken.jpg");
+}
+
 .menu {
     border-radius: 4px;
     color: white;
@@ -84,11 +105,12 @@ nav a {
     border: transparent;
     animation: mymove 10s;
 }
-.newsletter{
+
+.newsletter {
     padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: red;
+    background: linear-gradient(135deg, rgba(4, 184, 255, 0.719), rgba(245, 4, 4, 0.534)), url("img/unsplash/bg1.jpg");
     flex-basis: 100%;
 }

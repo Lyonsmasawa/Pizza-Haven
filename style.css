@@ -369,3 +369,15 @@ footer a{
     display: flex;
     justify-content: space-between;
 }
+.choices{
+    font-size: .82rem;
+    margin-top: 1%;
+    padding: 1%;
+    display: flex;
+    justify-content: space-around;
+}
+.btn-cust{
+    background-color: red;
+    padding: 0% 4%;
+    color: white; 
+}

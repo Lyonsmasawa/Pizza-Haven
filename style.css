@@ -333,7 +333,7 @@ footer a{
     justify-content: center;
     width: 100%;
     /* background: linear-gradient(135deg, rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.568)), url("img/toppins.jpg"); */
-    background: url("img/toppins.jpg");
+    /* background: url("img/toppins.jpg"); */
     background-size: cover;
 }
 .menu-body .card{
@@ -341,6 +341,21 @@ footer a{
     text-align: left;
     align-items: center;
     justify-content: center;
-    margin: 1rem;
-    
+    margin: 1rem;  
+    box-shadow: 0px 0px 15px black; 
+    border-radius: 4px;
+    padding: .1%;
+}
+.card-body{
+    padding: 0%;
+    width: 96%;
+}
+.card-title{
+    font-weight: 600;
+}
+.card-text{
+    color: white;
+    background-color: black;
+    padding: 1% 4%;
+    font-size: .8rem;
 }

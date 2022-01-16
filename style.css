@@ -46,6 +46,7 @@ nav {
     padding-left: 2%;
     display: flex;
 }
+
 .navcontent {
     flex-basis: 100%;
     display: flex;
@@ -71,4 +72,15 @@ nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.menu {
+    border-radius: 4px;
+    color: white;
+    background-color: red;
+    font-size: 1.5em;
+    font-weight: 900;
+    margin-top: 1.5rem;
+    padding: 0.4% 2%;
+    border: transparent;
+    animation: mymove 10s;
 }

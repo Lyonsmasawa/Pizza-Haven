@@ -126,7 +126,6 @@ nav a {
     background-blend-mode: overlay;
     background-repeat: no-repeat;
     border-radius: 0%;
-    margin-top: 2%;
 }
 .newbtn{
     background-color: black;
@@ -192,12 +191,30 @@ footer{
     align-items: center;
     text-align: center;
     justify-content: center;
+    background-color: black;
 }
 .quick-links{
     background-color: black;
-    width: 100%;
-    padding: 2%;
+    width: 80%;
+    padding: 2% 4%;
     display: flex;
     justify-content: center;
     color: white;
+    font-size: .9rem;
+}
+.quick-links li::before{
+    content: "\00BB   ";
+}
+.quick-links .social-media li::before{
+    content: " ";
+}
+.quick-links .col-md-3{
+    text-align: left;
+    flex-basis: 30%;
+}
+.quick-links li{
+    font-weight: 100;
+}
+.quick-links h4{
+    color: red;
 }

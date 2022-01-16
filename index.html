@@ -32,11 +32,11 @@
                 <a href="#home"><img class="lg" src="img/other/logo.png" alt="" style="width: 50%;"></a>
             </div>
             <ul class="navcontent">
-                <li><i class="fas fa-home"></i> Home</li>
-                <li><i class="fas fa-bars"></i> Menu</li>
-                <li><i class="fas fa-phone"></i> Contacts</li>
-                <li><i class="fas fa-user"></i> Login</li>
-                <li><i class="fas fa-shopping-basket"></i></li>
+                <li><i class="fas fa-home"></i><a href="#home"> Home</a></li>
+                <li><i class="fas fa-bars"></i><a href="/menu.html"> Menu</a></li>
+                <li><i class="fas fa-phone"></i><a href="#contacts"> Contacts</a></li>
+                <li><i class="fas fa-user"></i><a class="disabled" role="button" aria-disabled="true" href="/login.html"> Login</a></li>
+                <li><a href="/cart.html"><i class="fas fa-shopping-basket"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -87,7 +87,7 @@
         </div>
     </section>
 
-    <footer>
+    <footer id="contacts">
         <div class="newsletter card">
             <h5>Subscribe to get our offers:</h5>
             <form action="">
@@ -111,9 +111,9 @@
             <div class="col-md-3">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li>Menu</li>
-                    <li>Contact us</li>
-                    <li>Feedback</li>
+                    <li><a href="/menu.html"> Menu</a></li>
+                    <li><a href="#about-us"> How it works</a></li>
+                    <li><a href="/feedback.html"> Feedback</a></li>
                 </ul>
             </div>
             <div class="col-md-3">
@@ -125,7 +125,7 @@
                 </ul>
             </div>
             <div class="col-md-3">
-                <h4>Social Media Links</h4>
+                <h4>Social Media Tags</h4>
                 <ul class="social-media">
                     <li><img src="img/other/whatsapp.png" alt="" style="width: 17%;">+25470897380</li>
                     <li><img src="img/other/fb.png" alt="" style="width: 17%;">PizzaHaven</li>

@@ -372,11 +372,17 @@ footer a{
 .choices{
     font-size: .8rem;
     margin-top: 2%;
-    width: 100%;
+    width: 90%;
     display: flex;
-    justify-content: space-around;
+    align-content: center;
+    justify-content: center;
+    padding: 1%;
 }
-
+.choices label{
+    font-weight: 700;
+    padding: 0%;
+    margin: 0%;
+}
 .btn-cust2{
     background-color: black;
     padding: 1% 4%;

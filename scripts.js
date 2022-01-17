@@ -95,9 +95,8 @@ $(document).ready(function () {
       let deliveryOption = $('#delivery').find(":selected").val();
       let cost = parseInt($("#delivery").val()) + sum;
       console.log(deliveryOption);
-      if (deliveryOption === 200) {
+      if (deliveryOption === "200") {
         let setLocation =  prompt("enter location");
-        console.log(setLocation)
       }
       $("#message").text("Total cost of Pizza: " + $("#delivery option:selected").text() + " the total cost is: " + cost);
       $('#reset').click(function () {

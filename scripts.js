@@ -83,7 +83,7 @@ $(document).ready(function () {
       sum += this;
     });
     $("#cart").append(name + "</br>" + crust + " </br>" + size + " " + toppings + "</br>" + " Quantity: " + price + "</br>" + "$" + finalCalc.totals + "</br>");
-    $("#total").text("TOTAL: " + sum);
+    $("#total").text("TOTAL: $" + sum);
     $("#deliver").html('<button id="setlocation" class="btn-cust2 blink_me">Want it Delivered?</button>');
     $("#setlocation").click(function () {
       $("#location").toggle();
@@ -97,8 +97,9 @@ $(document).ready(function () {
       console.log(deliveryOption);
       if (deliveryOption === "200") {
         let setLocation =  prompt("enter location");
+        alert("Pizza will be delivered to " + setLocation.toUpperCase());
       }
-      $("#message").text("Total cost of Pizza: " + $("#delivery option:selected").text() + " the total cost is: " + cost);
+      $("#message").text("Total Cost: $" + cost);
       $('#reset').click(function () {
         location.reload();
       });

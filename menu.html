@@ -2,489 +2,320 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css"
-        integrity="sha510-T584yQ/tdRR5QwOpfvDfVQUidzfgc249Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N4tdErpFI8iaGx6x5g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha510-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,400;0,500;0,600;0,700;1,400;1,400;1,500;1,600;1,700&display=swap"
-        rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/4.6.0/jquery.min.js"
-        integrity="sha510-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/4e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script defer src="scripts.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="img/other/icon.png" type="image/x-icon">
-    <title>PizzaHaven</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css"
+    integrity="sha510-T584yQ/tdRR5QwOpfvDfVQUidzfgc249Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N4tdErpFI8iaGx6x5g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,400;0,500;0,600;0,700;1,400;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha510-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="scripts.js"></script>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/other/icon.png" type="image/x-icon">
+  <title>PizzaHaven</title>
 </head>
 
 <body class="container-fluid menu-body">
-    <script id="replace_with_navbar" src="nav.js"></script>
-    <section class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img class="img-fluid" style="width: 100%; height: 15rem;" src="img/vegetarian.jpeg" alt="">
-                    <div class="card-body">
-                        <h3 class="card-title">Vegeterian Pizza</h3>
-                        <div class="group-em">
-                            <span class="card-text">Select toppings and crust</span>
-                            <a href="" class="btn btn-default btn-cust">$10 $12 $13</a>
-                        </div>
-                    </div>
-                    <form class="form-x">
-                        <div class="choices">
-                            <div class="size">
-                                <label for="size">Size:</label>
-                                <select id="size">
-                                    <option value="small">Small</option>
-                                    <option value="medium">Medium</option>
-                                    <option value="large">Large</option>
-                                </select>
-                            </div>
-                            <div class="crusty">
-                                <label for="crusts">Crust:</label>
-                                <select id="cars">
-                                    <option value="crunchy">Crunchy</option>
-                                    <option value="stuffed">Stuffed</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="toppings">
-                            <div class="title">
-                                <label>Topping:</label>
-                            </div>
-                            <div class="contentin">
-                                <input type="checkbox" id="topping1" name="topping1" value="cheese">
-                                <label for="topping1"> Cheese</label><br>
-                                <input type="checkbox" id="topping2" name="topping2" value="tomato">
-                                <label for="topping2"> Tomato</label><br>
-                                <input type="checkbox" id="topping3" name="topping3" value="chillies">
-                                <label for="topping3"> Chillies</label><br><br>
-                            </div>
-                        </div>
-                        <input type="submit" class=" btn btn-cust2" value="Add to cart">
-                    </form>
-                </div>
+  <script id="replace_with_navbar" src="nav.js"></script>
+  <h4 class="mtitle">MENU</h4>
+  <section class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img class="img-fluid items-image" style="width: 100%; height: 15rem;" src="img/vegetarian.jpeg" alt="">
+          <div class="card-body select">
+            <h3 class="card-title items-title">Vegeterian Pizza</h3>
+            <div class="group-em">
+              <span class="card-text">Select toppings and crust</span>
+              <a href="" class="btn btn-default btn-cust">$10 $12 $13</a>
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img class="img-fluid" style="width: 100%; height: 15rem;" src="img/beefpizza.jpg" alt="">
-                    <div class="card-body">
-                        <h3 class="card-title">Beef-BBQs Pizza</h3>
-                        <div class="group-em">
-                            <span class="card-text">Select toppings and crust</span>
-                            <a href="" class="btn btn-default btn-cust">$10 $12 $13</a>
-                        </div>
-                    </div>
-                    <form class="form-x">
-                        <div class="choices">
-                            <div class="size">
-                                <label for="size">Size:</label>
-                                <select id="size">
-                                    <option value="small">Small</option>
-                                    <option value="medium">Medium</option>
-                                    <option value="large">Large</option>
-                                </select>
-                            </div>
-                            <div class="crusty">
-                                <label for="crusts">Crust:</label>
-                                <select id="cars">
-                                    <option value="crunchy">Crunchy</option>
-                                    <option value="stuffed">Stuffed</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="toppings">
-                            <div class="title">
-                                <label>Topping:</label>
-                            </div>
-                            <div class="contentin">
-                                <input type="checkbox" id="topping1" name="topping1" value="cheese">
-                                <label for="topping1"> Cheese</label><br>
-                                <input type="checkbox" id="topping2" name="topping2" value="tomato">
-                                <label for="topping2"> Tomato</label><br>
-                                <input type="checkbox" id="topping3" name="topping3" value="chillies">
-                                <label for="topping3"> Chillies</label><br><br>
-                            </div>
-                        </div>
-                        <input type="submit" class=" btn btn-cust2" value="Add to cart">
-                    </form>
+            <form id="veg">
+              <div class="row xy xy">
+                <div class="col">
+                  <input type="number" placeholder="0" id="vegs" required>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img class="img-fluid" style="width: 100%; height: 15rem;" src="img/hamburger.jpg" alt="">
-                    <div class="card-body">
-                        <h3 class="card-title">Hamburger Pizza</h3>
-                        <div class="group-em">
-                            <span class="card-text">Select toppings and crust</span>
-                            <a href="" class="btn btn-default btn-cust">$10 $12 $13</a>
-                        </div>
-                    </div>
-                    <form class="form-x">
-                        <div class="choices">
-                            <div class="size">
-                                <label for="size">Size:</label>
-                                <select id="size">
-                                    <option value="small">Small</option>
-                                    <option value="medium">Medium</option>
-                                    <option value="large">Large</option>
-                                </select>
-                            </div>
-                            <div class="crusty">
-                                <label for="crusts">Crust:</label>
-                                <select id="cars">
-                                    <option value="crunchy">Crunchy</option>
-                                    <option value="stuffed">Stuffed</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="toppings">
-                            <div class="title">
-                                <label>Topping:</label>
-                            </div>
-                            <div class="contentin">
-                                <input type="checkbox" id="topping1" name="topping1" value="cheese">
-                                <label for="topping1"> Cheese</label><br>
-                                <input type="checkbox" id="topping2" name="topping2" value="tomato">
-                                <label for="topping2"> Tomato</label><br>
-                                <input type="checkbox" id="topping3" name="topping3" value="chillies">
-                                <label for="topping3"> Chillies</label><br><br>
-                            </div>
-                        </div>
-                        <input type="submit" class=" btn btn-cust2" value="Add to cart">
-                    </form>
+                <div class="col"> <br>
+                  <button type="button" class="btn btn-cust2" data-bs-toggle="modal" data-bs-target="#choice"
+                    onclick="calculateAmount()">ORDER</button>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img class="img-fluid" style="width: 100%; height: 15rem;" src="img/hawaiianpizza.png" alt="">
-                    <div class="card-body">
-                        <h3 class="card-title"> Hawaiian Pizza</h3>
-                        <div class="group-em">
-                            <span class="card-text">Select toppings and crust</span>
-                            <a href="" class="btn btn-default btn-cust">$10 $12 $13</a>
-                        </div>
-                    </div>
-                    <form class="form-x">
-                        <div class="choices">
-                            <div class="size">
-                                <label for="size">Size:</label>
-                                <select id="size">
-                                    <option value="small">Small</option>
-                                    <option value="medium">Medium</option>
-                                    <option value="large">Large</option>
-                                </select>
-                            </div>
-                            <div class="crusty">
-                                <label for="crusts">Crust:</label>
-                                <select id="cars">
-                                    <option value="crunchy">Crunchy</option>
-                                    <option value="stuffed">Stuffed</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="toppings">
-                            <div class="title">
-                                <label>Topping:</label>
-                            </div>
-                            <div class="contentin">
-                                <input type="checkbox" id="topping1" name="topping1" value="cheese">
-                                <label for="topping1"> Cheese</label><br>
-                                <input type="checkbox" id="topping2" name="topping2" value="tomato">
-                                <label for="topping2"> Tomato</label><br>
-                                <input type="checkbox" id="topping3" name="topping3" value="chillies">
-                                <label for="topping3"> Chillies</label><br><br>
-                            </div>
-                        </div>
-                        <input type="submit" class=" btn btn-cust2" value="Add to cart">
-                    </form>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img class="img-fluid" style="width: 100%; height: 15rem;" src="img/toppins.jpg" alt="">
-                    <div class="card-body">
-                        <h3 class="card-title">Topian Pizza</h3>
-                        <div class="group-em">
-                            <span class="card-text">Select toppings and crust</span>
-                            <a href="" class="btn btn-default btn-cust">$10 $12 $13</a>
-                        </div>
-                    </div>
-                    <form class="form-x">
-                        <div class="choices">
-                            <div class="size">
-                                <label for="size">Size:</label>
-                                <select id="size">
-                                    <option value="small">Small</option>
-                                    <option value="medium">Medium</option>
-                                    <option value="large">Large</option>
-                                </select>
-                            </div>
-                            <div class="crusty">
-                                <label for="crusts">Crust:</label>
-                                <select id="cars">
-                                    <option value="crunchy">Crunchy</option>
-                                    <option value="stuffed">Stuffed</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="toppings">
-                            <div class="title">
-                                <label>Topping:</label>
-                            </div>
-                            <div class="contentin">
-                                <input type="checkbox" id="topping1" name="topping1" value="cheese">
-                                <label for="topping1"> Cheese</label><br>
-                                <input type="checkbox" id="topping2" name="topping2" value="tomato">
-                                <label for="topping2"> Tomato</label><br>
-                                <input type="checkbox" id="topping3" name="topping3" value="chillies">
-                                <label for="topping3"> Chillies</label><br><br>
-                            </div>
-                        </div>
-                        <input type="submit" class=" btn btn-cust2" value="Add to cart">
-                    </form>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img class="img-fluid" style="width: 100%; height: 15rem;" src="img/mozarella.jpg" alt="">
-                    <div class="card-body">
-                        <h3 class="card-title">Mozarella Pizza</h3>
-                        <div class="group-em">
-                            <span class="card-text">Select toppings and crust</span>
-                            <a href="" class="btn btn-default btn-cust">$10 $12 $13</a>
-                        </div>
-                    </div>
-                    <form class="form-x">
-                        <div class="choices">
-                            <div class="size">
-                                <label for="size">Size:</label>
-                                <select id="size">
-                                    <option value="small">Small</option>
-                                    <option value="medium">Medium</option>
-                                    <option value="large">Large</option>
-                                </select>
-                            </div>
-                            <div class="crusty">
-                                <label for="crusts">Crust:</label>
-                                <select id="cars">
-                                    <option value="crunchy">Crunchy</option>
-                                    <option value="stuffed">Stuffed</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="toppings">
-                            <div class="title">
-                                <label>Topping:</label>
-                            </div>
-                            <div class="contentin">
-                                <input type="checkbox" id="topping1" name="topping1" value="cheese">
-                                <label for="topping1"> Cheese</label><br>
-                                <input type="checkbox" id="topping2" name="topping2" value="tomato">
-                                <label for="topping2"> Tomato</label><br>
-                                <input type="checkbox" id="topping3" name="topping3" value="chillies">
-                                <label for="topping3"> Chillies</label><br><br>
-                            </div>
-                        </div>
-                        <input type="submit" class=" btn btn-cust2" value="Add to cart">
-                    </form>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img class="img-fluid" style="width: 100%; height: 15rem;" src="img/pepperoni.jpg" alt="">
-                    <div class="card-body">
-                        <h3 class="card-title">Pepperoni Pizza</h3>
-                        <div class="group-em">
-                            <span class="card-text">Select toppings and crust</span>
-                            <a href="" class="btn btn-default btn-cust">$10 $12 $13</a>
-                        </div>
-                    </div>
-                    <form class="form-x">
-                        <div class="choices">
-                            <div class="size">
-                                <label for="size">Size:</label>
-                                <select id="size">
-                                    <option value="small">Small</option>
-                                    <option value="medium">Medium</option>
-                                    <option value="large">Large</option>
-                                </select>
-                            </div>
-                            <div class="crusty">
-                                <label for="crusts">Crust:</label>
-                                <select id="cars">
-                                    <option value="crunchy">Crunchy</option>
-                                    <option value="stuffed">Stuffed</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="toppings">
-                            <div class="title">
-                                <label>Topping:</label>
-                            </div>
-                            <div class="contentin">
-                                <input type="checkbox" id="topping1" name="topping1" value="cheese">
-                                <label for="topping1"> Cheese</label><br>
-                                <input type="checkbox" id="topping2" name="topping2" value="tomato">
-                                <label for="topping2"> Tomato</label><br>
-                                <input type="checkbox" id="topping3" name="topping3" value="chillies">
-                                <label for="topping3"> Chillies</label><br><br>
-                            </div>
-                        </div>
-                        <input type="submit" class=" btn btn-cust2" value="Add to cart">
-                    </form>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img class="img-fluid" style="width: 100%; height: 15rem;" src="img/BBQchcicken.jpg" alt="">
-                    <div class="card-body">
-                        <h3 class="card-title">Chicken Pizza</h3>
-                        <div class="group-em">
-                            <span class="card-text">Select toppings and crust</span>
-                            <a href="" class="btn btn-default btn-cust">$10 $12 $13</a>
-                        </div>
-                    </div>
-                    <form class="form-x">
-                        <div class="choices">
-                            <div class="size">
-                                <label for="size">Size:</label>
-                                <select id="size">
-                                    <option value="small">Small</option>
-                                    <option value="medium">Medium</option>
-                                    <option value="large">Large</option>
-                                </select>
-                            </div>
-                            <div class="crusty">
-                                <label for="crusts">Crust:</label>
-                                <select id="cars">
-                                    <option value="crunchy">Crunchy</option>
-                                    <option value="stuffed">Stuffed</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="toppings">
-                            <div class="title">
-                                <label>Topping:</label>
-                            </div>
-                            <div class="contentin">
-                                <input type="checkbox" id="topping1" name="topping1" value="cheese">
-                                <label for="topping1"> Cheese</label><br>
-                                <input type="checkbox" id="topping2" name="topping2" value="tomato">
-                                <label for="topping2"> Tomato</label><br>
-                                <input type="checkbox" id="topping3" name="topping3" value="chillies">
-                                <label for="topping3"> Chillies</label><br><br>
-                            </div>
-                        </div>
-                        <input type="submit" class=" btn btn-cust2" value="Add to cart">
-                    </form>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img class="img-fluid" style="width: 100%; height: 15rem;" src="img/WhitePizza.jpg" alt="">
-                    <div class="card-body">
-                        <h3 class="card-title">White Pizza</h3>
-                        <div class="group-em">
-                            <span class="card-text">Select toppings and crust</span>
-                            <a href="" class="btn btn-default btn-cust">$10 $12 $13</a>
-                        </div>
-                    </div>
-                    <form class="form-x">
-                        <div class="choices">
-                            <div class="size">
-                                <label for="size">Size:</label>
-                                <select id="size">
-                                    <option value="small">Small</option>
-                                    <option value="medium">Medium</option>
-                                    <option value="large">Large</option>
-                                </select>
-                            </div>
-                            <div class="crusty">
-                                <label for="crusts">Crust:</label>
-                                <select id="cars">
-                                    <option value="crunchy">Crunchy</option>
-                                    <option value="stuffed">Stuffed</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="toppings">
-                            <div class="title">
-                                <label>Topping:</label>
-                            </div>
-                            <div class="contentin">
-                                <input type="checkbox" id="topping1" name="topping1" value="cheese">
-                                <label for="topping1"> Cheese</label><br>
-                                <input type="checkbox" id="topping2" name="topping2" value="tomato">
-                                <label for="topping2"> Tomato</label><br>
-                                <input type="checkbox" id="topping3" name="topping3" value="chillies">
-                                <label for="topping3"> Chillies</label><br><br>
-                            </div>
-                        </div>
-                        <input type="submit" class=" btn btn-cust2" value="Add to cart">
-                    </form>
-                </div>
-            </div>
+              </div>
+            </form>
+          </div>
         </div>
-    </section>
-    <section class="container" id="cart-sec">
-        <br>
-        <h5><strong class="tittle-cart card">CART</strong></h5>
-        <br>
-        <div class="cart-titles">
-            <span class="items col-md-4">ITEM</span>
-            <span class="item-prices col-md-4">PRICE</span>
-            <span class="quantities col-md-4">QUANTITY</span>
-        </div>
-        <div class="added-items">
-            <div class="add-item-row row">
-                <div class="cart-item col-md-4">
-                    <img class="item-image" src="img/pic1.jpg">
-                    <span class="item-title">Pepperoni</span>
-                </div>
-                <span class="cart-price col-md-4">$10</span>
-                <div class="item-quantity col-md-4">
-                    <input class="item-quantity" type="number" value="1">
-                    <button class="btn btn-cust2 btn-rm" type="button">REMOVE</button>
-                </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img class="img-fluid items-image" style="width: 100%; height: 15rem;" src="img/beefpizza.jpg" alt="">
+          <div class="card-body select">
+            <h3 class="card-title items-title">Beef-BBQs Pizza</h3>
+            <div class="group-em">
+              <span class="card-text">Select toppings and crust</span>
+              <a href="" class="btn btn-default btn-cust">$10 $12 $13</a>
             </div>
-            <br>
-            <div class="add-item-row row">
-                <div class="cart-item col-md-4">
-                    <img class="item-image" src="img/pic2.jpg">
-                    <span class="item-title">Pepperoni</span>
+            <form id="bef">
+              <div class="row xy">
+                <div class="col">
+                  <input type="number" placeholder="0" id="befs" required>
                 </div>
-                <span class="cart-price col-md-4">$10</span>
-                <div class="item-quantity col-md-4">
-                    <input class="item-quantity" type="number" value="1">
-                    <button class="btn btn-cust2 btn-rm" type="button">REMOVE</button>
+                <div class="col"> <br>
+                  <button type="button" class="btn btn-cust2" data-bs-toggle="modal" data-bs-target="#choice"
+                    onclick="calculateAmount()">ORDER</button>
                 </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img class="img-fluid items-image" style="width: 100%; height: 15rem;" src="img/hamburger.jpg" alt="">
+          <div class="card-body select">
+            <h3 class="card-title items-title">Hamburger Pizza</h3>
+            <div class="group-em">
+              <span class="card-text">Select toppings and crust</span>
+              <a href="" class="btn btn-default btn-cust">$10 $12 $13</a>
             </div>
+            <form id="ham">
+              <div class="row xy">
+                <div class="col">
+                  <input type="number" placeholder="0" id="hams">
+                </div>
+                <div class="col"> <br>
+                  <button type="button" class="btn btn-cust2" data-bs-toggle="modal" data-bs-target="#choice"
+                    onclick="calculateAmount()">ORDER</button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
-        <div class="final">
-            <h4 class="cart-text"><strong> Total Amount:</strong></h4>
-            <span class="total">$90</span>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img class="img-fluid items-image" style="width: 100%; height: 15rem;" src="img/hawaiianpizza.png" alt="">
+          <div class="card-body select">
+            <h3 class="card-title items-title">Hamburger Pizza</h3>
+            <div class="group-em">
+              <span class="card-text">Select toppings and crust</span>
+              <a href="" class="btn btn-default btn-cust">$10 $12 $13</a>
+            </div>
+            <form id="haw">
+              <div class="row xy">
+                <div class="col">
+                  <input type="number" placeholder="0" id="mags">
+                </div>
+                <div class="col"> <br>
+                  <button type="button" class="btn btn-cust2" data-bs-toggle="modal" data-bs-target="#choice"
+                    onclick="calculateAmount()">ORDER</button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
-        <div class="delivery">
-            <h4><strong>Delivered</strong></h4>
-            <input type="radio" name="deliver" value="yes" class="radio" />Yes
-            <input type="radio" name="deliver" value="no" class="radio" />No
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img class="img-fluid items-image" style="width: 100%; height: 15rem;" src="img/margherita.jpg" alt="">
+          <div class="card-body select">
+            <h3 class="card-title items-title"> Margherita Pizza</h3>
+            <div class="group-em">
+              <span class="card-text">Select toppings and crust</span>
+              <a href="" class="btn btn-default btn-cust">$10 $12 $13</a>
+            </div>
+            <form id="mag">
+              <div class="row xy">
+                <div class="col">
+                  <input type="number" placeholder="0" id="haws">
+                </div>
+                <div class="col"> <br>
+                  <button type="button" class="btn btn-cust2" data-bs-toggle="modal" data-bs-target="#choice"
+                    onclick="calculateAmount()">ORDER</button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
-        <br>
-        <button class="btn btn-cust2 btn-check" type="button">Checkout</button>
-        <br>
-    </section>
-    <script id="replace_with_footer" src="footer.js"></script>
-</body>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img class="img-fluid items-image" style="width: 100%; height: 15rem;" src="img/toppins.jpg" alt="">
+          <div class="card-body select">
+            <h3 class="card-title items-title">Topian Pizza</h3>
+            <div class="group-em">
+              <span class="card-text">Select toppings and crust</span>
+              <a href="" class="btn btn-default btn-cust">$10 $12 $13</a>
+            </div>
+            <form id="top">
+              <div class="row xy">
+                <div class="col">
+                  <input type="number" placeholder="0" id="tops">
+                </div>
+                <div class="col"> <br>
+                  <button type="button" class="btn btn-cust2" data-bs-toggle="modal" data-bs-target="#choice"
+                    onclick="calculateAmount()">ORDER</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img class="img-fluid items-image" style="width: 100%; height: 15rem;" src="img/mozarella.jpg" alt="">
+          <div class="card-body select">
+            <h3 class="card-title items-title">Mozarella Pizza</h3>
+            <div class="group-em">
+              <span class="card-text">Select toppings and crust</span>
+              <a href="" class="btn btn-default btn-cust">$10 $12 $13</a>
+            </div>
+            <form id="moz">
+              <div class="row xy">
+                <div class="col">
+                  <input type="number" placeholder="0" id="mozs">
+                </div>
+                <div class="col"> <br>
+                  <button type="button" class="btn btn-cust2" data-bs-toggle="modal" data-bs-target="#choice"
+                    onclick="calculateAmount()">ORDER</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img class="img-fluid items-image" style="width: 100%; height: 15rem;" src="img/pepperoni.jpg" alt="">
+          <div class="card-body select">
+            <h3 class="card-title items-title">Pepperoni Pizza</h3>
+            <div class="group-em">
+              <span class="card-text">Select toppings and crust</span>
+              <a href="" class="btn btn-default btn-cust">$10 $12 $13</a>
+            </div>
+            <form id="pep">
+              <div class="row xy">
+                <div class="col">
+                  <input type="number" placeholder="0" id="peps">
+                </div>
+                <div class="col"> <br>
+                  <button type="button" class="btn btn-cust2" data-bs-toggle="modal" data-bs-target="#choice"
+                    onclick="calculateAmount()">ORDER</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img class="img-fluid items-image" style="width: 100%; height: 15rem;" src="img/WhitePizza.jpg" alt="">
+          <div class="card-body select">
+            <h3 class="card-title items-title">White Pizza</h3>
+            <div class="group-em">
+              <span class="card-text">Select toppings and crust</span>
+              <a href="" class="btn btn-default btn-cust">$10 $12 $13</a>
+            </div>
+            <form id="white">
+              <div class="row xy">
+                <div class="col">
+                  <input type="number" placeholder="0" id="whites">
+                </div>
+                <div class="col"> <br>
+                  <button type="button" class="btn btn-cust2" data-bs-toggle="modal" data-bs-target="#choice"
+                    onclick="calculateAmount()">ORDER</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="xyz modal" id="choice">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <h4>Select toppings and crust of your choice!</h4>
+          <div class="modal-body">
+            <form>
+              <div class="row xy">
+                <div class="crusty col">
+                  <label for="size">Size:</label> <br>
+                  <select id="size" class="form-select">
+                    <option value="10" data-cost="10">Small</option>
+                    <option value="12" data-cost="12">Medium</option>
+                    <option value="13" data-cost="13">Large</option>
+                  </select>
+                </div>
+                <div class="crusty col">
+                  <label for="Crust">Crust:</label> <br>
+                  <select id="crust" class="form-select">
+                    <option value="2" data-cost="2">Crunchy</option>
+                    <option value="2" data-cost="2">Stuffed</option>
+                  </select>
+                </div>
+                <div class="crusty col">
+                  <label for="toppings">Toppings:</label>
+                  <select id="toppings" class="form-select">
+                    <option value="1" data-cost="1">Cheese</option>
+                    <option value="1" data-cost="1">Tomato</option>
+                    <option value="1" data-cost="1">Chillies</option>
+                    <option value="2" data-cost="2">Chillies & Tomato</option>
+                    <option value="2" data-cost="2">Chillies & Cheese</option>
+                    <option value="3" data-cost="3">Chillies & Tomato & Cheese</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="form-x">
+            <div>
+              <input type="button" class="btn btn-cust2" data-bs-dismiss="modal" value="Add to cart" id="addCart">
+            </div>
+            <div>
+              <input type="button" class="btn btn-cust2" data-bs-dismiss="modal" value="close">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <div class="container-fluid">
+    <div class="customreceipt">
+      <div class="receipt ">
+        <div id="cart card">
+          <h2 class="mtitle">CHECKOUT PURCHASE</h2>
+        </div>
+        <div id="total"> </div>
+        <div id="getlocation"></div>
+        <div id="location"></div>
+        <div id="checkout"></div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="mtitle">HEY YOU ^_^ ! thanks You</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div id="message"></div>
+        </div>
+        <div class="modal-footer">
+          <button id="reset" type="button" class="btn btn-cust2" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script id="replace_with_footer" src="footer.js"></script>
+</body>
 </html>

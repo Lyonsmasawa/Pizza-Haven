@@ -99,6 +99,7 @@ $(document).ready(function () {
         let setLocation =  prompt("enter location");
         alert("Pizza will be delivered to " + setLocation.toUpperCase());
       }
+      
       $("#message").text("Total Cost: $" + cost);
       $('#reset').click(function () {
         location.reload();

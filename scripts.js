@@ -82,7 +82,7 @@ $(document).ready(function () {
     $.each(finalCalc.totals, function () {
       sum += this;
     });
-    $("#cart").append(name + "</br>" + crust + " </br>" + size + " " + toppings + "</br>" + " Quantity: " + price + "</br>" + "$" + finalCalc.totals + "</br>");
+    $("#cart").append(name + "</br>" + "<strong> Crust: </strong>" + crust + ": $" + pizzaCrustChoice + " </br>" + "<strong> Size: </strong> " + size + ": $" + pizzaSize + "</br>" + "<strong> Toppings: </strong>"  + toppings + ": $" + pizzaToppingsChoice + "</br>" + " Quantity: " + price + "</br>" + ": $" + finalCalc.totals + "</br>");
     $("#total").text("TOTAL: $" + sum);
     $("#deliver").html('<button id="setlocation" class="btn-cust2 blink_me">Want it Delivered?</button>');
     $("#setlocation").click(function () {

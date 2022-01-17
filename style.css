@@ -494,6 +494,11 @@ footer a {
     padding: 2%;
 }
 
+.item-quantities {
+    width: 30%;
+    padding: 2%;
+}
+
 .item-title {
     color: black;
     padding: 2%;
